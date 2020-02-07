@@ -88,11 +88,8 @@ var self=GameGlobal
     t.setWechatFetch = setWechatFetch;
     GameGlobal.tf=t
     GameGlobal.tf.setWechatFetch(GameGlobal)
-    //GameGlobal.tf.ENV.set('WEBGL_PACK', false)
-    //强制使用cpu模式
+    //强制使用cpu模式,为了兼容低版本android下的头条小游戏
     GameGlobal.tf.ENV.set('WEBGL_FORCE_F16_TEXTURES', true)
-
-    
 
 Object.defineProperty(t,"__esModule",{value:!0})});
 //# sourceMappingURL=tf.min.js.map
